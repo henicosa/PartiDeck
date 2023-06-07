@@ -1,0 +1,32 @@
+{
+  "Titel": "Randomisierte Auswahl von Studierenden durch E-Mail im Namen des Präsidiums",
+  "Zielgruppe": "Studierende",
+  "Anwendungsfall": "Die Methode wird eingesetzt, um eine Gruppe von Studierenden für eine Befragung oder einen Workshop auszuwählen.",
+  "Beschreibung": "blablabla",
+  "GeeignetePersonenzahl": {
+    "min": 50,
+    "max": 1000
+  },
+  "Partizipation": {
+    "Partizipationsgrad": "niedrig",
+    "ArtDerPartizipation": "Informationsaustausch"
+  },
+  "Voraussetzungen": "Die Studierenden müssen die zugesandte E-Mail beantworten.",
+  "Daten": "Die Teilnahme erfordert keine besonderen Daten.",
+  "TechnischeTools": "Eine E-Mail-Software für den Versand der E-Mails.",
+  "FinanzielleRessourcen": "Es fallen keine besonderen Kosten an.",
+  "RisikoWagnis": "Es besteht das Risiko, dass nicht genügend Studierende antworten und die Auswahl dadurch eingeschränkt ist.",
+  "SchwierigkeitenHindernisse": "Eine Herausforderung besteht darin sicherzustellen, dass die E-Mails tatsächlich von authentischen Studierenden beantwortet werden.",
+  "Ursprung": {
+    "TopDown": true,
+    "BottomUp": false
+  },
+  "DauerIntervall": "2 Wochen",
+  "Vorbereitungszeit": {
+    "Umsetzung": "1 Stunde",
+    "Initiierung": "1 Tag"
+  },
+  "Nachhaltigkeit": "Es müssen keine besonderen Maßnahmen zur Nachhaltigkeit ergriffen werden.",
+  "Ergebnistyp": "Eine Gruppe von Studierenden wird ausgewählt, um an einer Befragung oder einem Workshop teilzunehmen."
+}
+

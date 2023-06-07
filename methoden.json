@@ -1,0 +1,414 @@
+[{
+  "Titel": "Randomisierte Auswahl von Studierenden durch E-Mail im Namen des Präsidiums",
+  "Zielgruppe": "Studierende",
+  "Anwendungsfall": "Die Methode wird eingesetzt, um eine Gruppe von Studierenden für eine Befragung oder einen Workshop auszuwählen.",
+  "Beschreibung": "blablabla",
+  "GeeignetePersonenzahl": {
+    "min": 50,
+    "max": 1000
+  },
+  "Partizipation": {
+    "Partizipationsgrad": "niedrig",
+    "ArtDerPartizipation": "Informationsaustausch"
+  },
+  "Voraussetzungen": "Die Studierenden müssen die zugesandte E-Mail beantworten.",
+  "Daten": "Die Teilnahme erfordert keine besonderen Daten.",
+  "TechnischeTools": "Eine E-Mail-Software für den Versand der E-Mails.",
+  "FinanzielleRessourcen": "Es fallen keine besonderen Kosten an.",
+  "RisikoWagnis": "Es besteht das Risiko, dass nicht genügend Studierende antworten und die Auswahl dadurch eingeschränkt ist.",
+  "SchwierigkeitenHindernisse": "Eine Herausforderung besteht darin sicherzustellen, dass die E-Mails tatsächlich von authentischen Studierenden beantwortet werden.",
+  "Ursprung": {
+    "TopDown": true,
+    "BottomUp": false
+  },
+  "DauerIntervall": "2 Wochen",
+  "Vorbereitungszeit": {
+    "Umsetzung": "1 Stunde",
+    "Initiierung": "1 Tag"
+  },
+  "Nachhaltigkeit": "Es müssen keine besonderen Maßnahmen zur Nachhaltigkeit ergriffen werden.",
+  "Ergebnistyp": "Eine Gruppe von Studierenden wird ausgewählt, um an einer Befragung oder einem Workshop teilzunehmen."
+},
+{
+  "Titel": "Gamification von Sitzungsprotokollerstellung durch Badges",
+  "Zielgruppe": "Lehrende",
+  "Anwendungsfall": "Die Methode soll dazu dienen, bei Studierenden das Bewusstsein für die Wichtigkeit von Sitzungsprotokollen zu erhöhen und die Qualität der Protokolle zu verbessern.",
+  "Beschreibung": "blablabla",
+  "GeeignetePersonenzahl": {
+    "min": 5,
+    "max": 50
+  },
+  "Partizipation": {
+    "Partizipationsgrad": "hoch",
+    "ArtDerPartizipation": "Mitgestaltung"
+  },
+  "Voraussetzungen": "Die Teilnehmer*innen müssen Zugang zu einem Computer oder Mobilgerät haben.",
+  "Daten": "Die Methode benötigt keine besonderen Daten.",
+  "TechnischeTools": "Eine Online-Plattform für die Erstellung und Freigabe von Sitzungsprotokollen.",
+  "FinanzielleRessourcen": "Keine finanziellen Ressourcen erforderlich.",
+  "RisikoWagnis": "Es besteht das Risiko, dass einige Teilnehmer*innen nicht aktiv teilnehmen und somit die Qualität der Protokolle beeinträchtigen.",
+  "SchwierigkeitenHindernisse": "Es könnten Probleme mit der Technologie oder der Motivation der Teilnehmer*innen auftreten.",
+  "Ursprung": {
+    "TopDown": false,
+    "BottomUp": true
+  },
+  "DauerIntervall": "Die Methode sollte über mehrere Sitzungen (z.B. ein Semester) angewendet werden.",
+  "Vorbereitungszeit": {
+    "Umsetzung": "Die Entwicklung der Plattform und der Badges erfordert einige Wochen Zeit.",
+    "Initiierung": "Einige Tage zur Bekanntmachung der Methode und Motivation der Teilnehmer*innen."
+  },
+  "Nachhaltigkeit": "Es sollten regelmäßig neue Badges hinzugefügt und die Auswirkungen der Methode evaluiert werden.",
+  "Ergebnistyp": "Die Teilnehmer*innen sollen in der Lage sein, hochwertige Sitzungsprotokolle zu erstellen, die zur Erreichung der Ziele beitragen."
+}
+,
+{
+  "Titel": "Co-Creation Lab: Studierende als Partner bei der Hochschulentwicklung",
+  "Zielgruppe": "Hochschulleitung",
+  "Anwendungsfall": "Die Methode soll dazu dienen, Studierende als gleichberechtigte Partner bei der Hochschulentwicklung einzubeziehen und ihre Ideen und Perspektiven zu berücksichtigen.",
+  "GeeignetePersonenzahl": {
+    "min": 10,
+    "max": 50
+  },
+  "Partizipation": {
+    "Partizipationsgrad": "hoch",
+    "ArtDerPartizipation": "Mitbestimmung"
+  },
+  "Voraussetzungen": "Es sollten geeignete Räumlichkeiten für die Veranstaltung vorhanden sein und die Teilnehmer*innen sollten im Voraus über die Ziele und Arbeitsweise des Labors informiert werden.",
+  "Daten": "Die Methode benötigt keine besonderen Daten.",
+  "TechnischeTools": "Es können digitale Tools wie Online-Plattformen und interaktive Whiteboards zur Unterstützung der Zusammenarbeit genutzt werden.",
+  "FinanzielleRessourcen": "Es könnten finanzielle Ressourcen zur Verfügung gestellt werden, um die Umsetzung der Ideen und Vorschläge der Studierenden zu ermöglichen.",
+  "RisikoWagnis": "Es besteht das Risiko, dass nicht alle Studierenden aktiv teilnehmen oder dass es zu Konflikten zwischen den Teilnehmer*innen kommt.",
+  "SchwierigkeitenHindernisse": "Es könnte schwierig sein, die Teilnehmer*innen zu motivieren und ihre Ideen und Perspektiven angemessen zu berücksichtigen.",
+  "Ursprung": {
+    "TopDown": false,
+    "BottomUp": true
+  },
+  "DauerIntervall": "Das Co-Creation Lab sollte über einen längeren Zeitraum (z.B. ein Semester) stattfinden.",
+  "Vorbereitungszeit": {
+    "Umsetzung": "Die Organisation und Durchführung des Labs erfordert einige Wochen Vorbereitungszeit, um geeignete Teilnehmer*innen zu identifizieren, Räumlichkeiten vorzubereiten und Materialien bereitzustellen.",
+    "Initiierung": "Einige Wochen bis Monate zur Ankündigung und Motivation der Teilnehmer*innen sowie zur Vorbereitung der Ziele und Arbeitsweise des Labs."
+  },
+  "Nachhaltigkeit": "Es sollten klare Verfahren zur Umsetzung der Ideen und Vorschläge der Studierenden sowie zur Bewertung der Ergebnisse des Co-Creation Labs festgelegt werden.",
+  "Ergebnistyp": "Das Ziel ist es, eine größere Beteiligung der Studierenden an der Hochschulentwicklung zu erreichen und ihre Perspektiven und Ideen angemessen zu berücksichtigen." 
+}
+,
+{
+  "Titel": "Partizipative Budgetierung",
+  "Zielgruppe": "Studierende",
+  "Anwendungsfall": "Studierende bestimmen über finanzielle Ressourcen",
+  "Beschreibung": "Die partizipative Budgetierung ist ein partizipatives Verfahren, bei dem Studierende über die Verwendung eines bestimmten Budgets entscheiden können. Das Budget kann von der Universität oder der Studierendenvertretung zur Verfügung gestellt werden. Studierende können Vorschläge für Projekte und Initiativen einreichen, die durch das Budget finanziert werden sollen. Anschließend wird darüber abgestimmt, welche Vorschläge umgesetzt werden sollen. Durch das Verfahren wird Studierenden eine direkte Mitbestimmungsmöglichkeit über den Einsatz von finanziellen Ressourcen gegeben.",
+  "GeeignetePersonenzahl": {
+    "min": 10,
+    "max": 500
+  },
+  "Partizipation": {
+    "Partizipationsgrad": "hoch",
+    "ArtDerPartizipation": "Mitbestimmung"
+  },
+  "Voraussetzungen": "Teilnahmeberechtigung als Studierende der Universität",
+  "Daten": "Keine besonderen Daten erforderlich",
+  "TechnischeTools": "Abstimmungstools wie Online-Umfragen oder Abstimmungsplattformen können genutzt werden",
+  "FinanzielleRessourcen": "Ja",
+  "RisikoWagnis": "Möglicherweise gibt es Konflikte und Diskussionen darüber, welche Projekte und Initiativen finanziert werden sollen und welche nicht. Es besteht auch das Risiko, dass nicht genügend finanzielle Mittel vorhanden sind, um alle vorgeschlagenen Projekte umzusetzen.",
+  "SchwierigkeitenHindernisse": "Eine Herausforderung kann darin bestehen, dass nicht alle Studierenden an dem Verfahren teilnehmen und somit die Entscheidungen von einer kleinen Gruppe getroffen werden können.",
+  "Ursprung": {
+    "TopDown": false,
+    "BottomUp": true
+  },
+  "DauerIntervall": "Einmal jährlich oder semesterweise",
+  "Vorbereitungszeit": {
+    "Umsetzung": "Einige Wochen bis Monate, um das Verfahren und die Abstimmung vorzubereiten",
+    "Initiierung": "Einige Wochen bis Monate, um Studierende zu informieren und zur Teilnahme aufzufordern"
+  },
+  "Nachhaltigkeit": "Es sollten Maßnahmen ergriffen werden, um sicherzustellen, dass die Entscheidungen der Studierenden durchgeführt und umgesetzt werden. Außerdem kann eine Evaluierung der Ergebnisse und Auswirkungen des Verfahrens durchgeführt werden.",
+  "Ergebnistyp": "Finanzielle Förderung und Umsetzung von ausgewählten Projekten und Initiativen"
+}
+,
+{
+  "Titel": "Hochschulforum Zukunft: Studierende gestalten langfristige Strategien",
+  "Zielgruppe": "Studierende",
+  "Anwendungsfall": "Studierende gestalten langfristige Strategien",
+  "Beschreibung": "Das Hochschulforum Zukunft ist eine partizipative Methode zur Gestaltung langfristiger Strategien im Hochschulkontext. Studierende haben dabei die Möglichkeit, ihre Perspektiven und Ideen einzubringen und an der Erarbeitung von Zielen und Maßnahmen mitzuwirken. Ziel ist es, eine langfristige Orientierung der Hochschule unter Berücksichtigung der Interessen und Bedürfnisse der Studierenden zu erreichen.",
+  "GeeignetePersonenzahl": {
+    "min": 10,
+    "max": 100
+  },
+  "Partizipation": {
+    "Partizipationsgrad": "hoch",
+    "ArtDerPartizipation": "Mitgestaltung"
+  },
+  "Voraussetzungen": "Teilnahmeberechtigung als Studierende der Hochschule",
+  "Daten": "Möglicherweise müssen Daten über Studierendenzahlen, Studienerfolg und -abbruch, Arbeitsmarktentwicklungen, gesellschaftliche Veränderungen etc. gesammelt, aufbereitet und analysiert werden",
+  "TechnischeTools": "Analoge oder digitale Arbeitsmittel (z.B. Pinnwände, Online-Plattformen oder Kollaborations-Tools)",
+  "FinanzielleRessourcen": "Es können finanzielle Ressourcen für die Moderation und Organisation der Veranstaltung benötigt werden",
+  "RisikoWagnis": "Die Gefahr besteht, dass das Hochschulforum Zukunft weniger von den Studierenden angenommen wird als erwartet. Es können zudem Konflikte in der Diskussion und Einschätzung von zukünftigen Entwicklungen entstehen",
+  "SchwierigkeitenHindernisse": "Eine Herausforderung kann darin liegen, dass es schwierig sein kann, eine Vielzahl unterschiedlicher Perspektiven und Meinungen der Studierenden in einen gemeinsamen Prozess zu integrieren",
+  "Ursprung": {
+    "TopDown": false,
+    "BottomUp": true
+  },
+  "DauerIntervall": "Einmalig oder in regelmäßigen Abständen (z.B. alle 2-3 Jahre)",
+  "Vorbereitungszeit": {
+    "Umsetzung": "Die Umsetzung des Hochschulforums erfordert eine gut geplante und koordinierte Organisation. Die Vorbereitungszeit kann ein paar Monate bis zu einem Jahr betragen",
+    "Initiierung": "Die Initiierung des Hochschulforums Zeit erfordert eine hohe Kommunikations- und Einbeziehungsbereitschaft seitens der Hochschulleitung und der Studierenden"
+  },
+  "Nachhaltigkeit": "Es sollten Maßnahmen ergriffen werden, um sicherzustellen, dass die erarbeiteten Ziele und Maßnahmen auch tatsächlich umgesetzt und eingebunden werden. Dazu kann es sinnvoll sein, ein Monitoring- und Evaluationssystem einzurichten",
+  "Ergebnistyp": "Langfristige Strategien und Leitlinien für die Hochschulentwicklung, die erklären, welche Vision die Hochschule für ihre zukünftigen Entwicklungen sieht"
+}
+,
+{
+  "Titel": "Social Scoring im Hochschulkontext - universitätsöffentliches Ehrenamtsranking",
+  "Zielgruppe": "Studierende",
+  "Anwendungsfall": "Universitätsöffentliches Ehrenamtsranking",
+  "Beschreibung": "Das Social-Scoring-System ist eine partizipative Methode zur Bewertung von ehrenamtlichem Engagement von Studierenden. Studierende können ihre ehrenamtlichen Aktivitäten einreichen, die dann in einer öffentlich zugänglichen Rangliste veröffentlicht werden. Die Bewertung erfolgt auf Basis von quantitativen und qualitativen Kriterien, die von den Studierenden selbst erarbeitet werden. Ziel ist es, Studierende zu ehrenamtlichem Engagement zu motivieren und zu einer höheren Wertschätzung von ehrenamtlichem Engagement in der Hochschulgemeinde beizutragen.",
+  "GeeignetePersonenzahl": {
+    "min": 100,
+    "max": 1000
+  },
+  "Partizipation": {
+    "Partizipationsgrad": "hoch",
+    "ArtDerPartizipation": "Informationsaustausch"
+  },
+  "Voraussetzungen": "Nutzerkonto für das Online-Einreichen von ehrenamtlichen Aktivitäten benötigt",
+  "Daten": "Daten über eingereichte ehrenamtliche Aktivitäten müssen von den Studierenden selbst bereitgestellt und von der Universität ausgewertet werden",
+  "TechnischeTools": "In einem Online-Portal können Studierende ihre ehrenamtlichen Aktivitäten einreichen sowie die Rangliste und Infos über andere Studierenden ansehen",
+  "FinanzielleRessourcen": "Keine besonderen Ressourcen erforderlich",
+  "RisikoWagnis": "Die Bewertung von ehrenamtlichen Aktivitäten kann zu Konflikten und Diskussionen darüber führen, welche Aktivitäten mehr oder weniger wertvoll sind.",
+  "SchwierigkeitenHindernisse": "Eine Herausforderung kann darin liegen, dass nicht alle Studierenden ein Interesse an ehrenamtlichem Engagement haben und somit eine kleine Gruppe von Studierenden die Rangliste dominiert.",
+  "Ursprung": {
+    "TopDown": false,
+    "BottomUp": true
+  },
+  "DauerIntervall": "Laufend",
+  "Vorbereitungszeit": {
+    "Umsetzung": "Ein paar Wochen bis Monate, um das Online-Portal und die Bewertungskriterien einzurichten",
+    "Initiierung": "Einige Wochen, um die Studierenden über die Teilnahmemöglichkeit zu informieren und ein Interesse zu wecken"
+  },
+  "Nachhaltigkeit": "Es ist wichtig, dass die Rangliste regelmäßig aktualisiert und gepflegt wird, um die Motivation und Interesse der Studierenden aufrechtzuerhalten. Eine Absprache mit den studentischen Vereinigungen und Fachrichtungen kann auch zur Pflege und Bekanntmachung beitragen.",
+  "Ergebnistyp": "Rangliste von ehrenamtlich engagierten Studierenden"
+} 
+,
+{
+  "Titel": "Surreallabor Hochschulpolitik - Scheitern an bürokratischen Hürden systematisch öffentlich machen",
+  "Zielgruppe": "Studierende",
+  "Anwendungsfall": "Das Surreallabor Hochschulpolitik ermöglicht Studierenden, sich aktiv an der Hochschulpolitik zu beteiligen und Missstände innerhalb der bürokratischen Strukturen aufzuzeigen. Hierbei sollen auch konkrete Fälle von scheiternden Partizipationsversuchen systematisch gesammelt und öffentlich gemacht werden, um auf bestehende Missstände aufmerksam zu machen.",
+  "Beschreibung": "Das Surreallabor Hochschulpolitik ist eine Plattform für Studierende, um sich aktiv an der Hochschulpolitik zu beteiligen und eigene Ideen und Vorschläge einzubringen. Hierbei soll besonderes Augenmerk auf die bürokratischen Strukturen im Hochschulbereich gelegt werden, die oft eine effektive Partizipation erschweren oder sogar unmöglich machen. Das Surreallabor ermöglicht es Studierenden, ihre Erfahrungen und Erlebnisse bei der Partizipation transparent zu machen und gezielte Verbesserungsvorschläge zu entwickeln.",
+  "GeeignetePersonenzahl": {
+    "min": 2,
+    "max": "keine Begrenzung"
+  },
+  "Partizipation": {
+    "Partizipationsgrad": "hoch",
+    "ArtDerPartizipation": "Mitgestaltung"
+  },
+  "Voraussetzungen": "Erfahrung im Bereich Hochschulpolitik ist von Vorteil, aber nicht zwingend erforderlich.",
+  "Daten": "Keine Angabe",
+  "TechnischeTools": "Plattform für den Austausch von Informationen und Erfahrungen, eventuell Integration von Online-Abstimmungstools",
+  "FinanzielleRessourcen": "Keine finanziellen Ressourcen notwendig",
+  "RisikoWagnis": "Möglicherweise unerwünschte Aufmerksamkeit von Hochschulbehörden, die die Veröffentlichung von Missständen nicht gerne sehen. Mögliche Probleme bei der Umsetzung technischer Tools.",
+  "SchwierigkeitenHindernisse": "Schwierigkeiten bei der Etablierung und Verbreitung der Plattform, mögliche Ablehnung durch andere Studierende",
+  "Ursprung": {
+    "TopDown": false,
+    "BottomUp": true
+  },
+  "DauerIntervall": "Keine Angabe",
+  "Vorbereitungszeit": {
+    "Umsetzung": "2-3 Monate",
+    "Initiierung": "1 Monat"
+  },
+  "Nachhaltigkeit": "Die Plattform soll dauerhaft zur Verfügung stehen und kontinuierlich verbessert werden. Eine gemeinsame Nutzung und Verbreitung der Ergebnisse ist erwünscht.",
+  "Ergebnistyp": "Sensibilisierung und Aufklärung über bestehende bürokratische Hürden im Hochschulbereich und mögliche Lösungsansätze. Konkrete Verbesserungsvorschläge sollten erarbeitet werden."  
+}
+,
+{
+  "Titel": "Kreatives Schreiben für Sitzungsprotokolle",
+  "Zielgruppe": "Lehrende",
+  "Anwendungsfall": "Das Projekt Kreatives Schreiben für Sitzungsprotokolle soll Lehrenden dabei helfen, Sitzungsprotokolle auf eine kreative und interessante Weise zu schreiben, um die Motivation zur Teilnahme an Sitzungen zu steigern und die Zusammenarbeit innerhalb des Lehrteams zu fördern.",
+  "Beschreibung": "Das Projekt Kreatives Schreiben für Sitzungsprotokolle bietet Lehrenden eine Plattform, um ihre Sitzungsprotokolle auf eine kreative und interessante Weise zu gestalten. Hierbei können verschiedene Schreibtechniken verwendet werden, um die Teilnehmerinnen und Teilnehmer zu motivieren und das Arbeiten im Lehrteam zu erleichtern. Das Projekt soll als Anreiz für die Teilnahme an Sitzungen und als Möglichkeit zur Stärkung der Zusammenarbeit im Team dienen.",
+  "GeeignetePersonenzahl": {
+    "min": 2,
+    "max": 20
+  },
+  "Partizipation": {
+    "Partizipationsgrad": "mittel",
+    "ArtDerPartizipation": "Mitgestaltung"
+  },
+  "Voraussetzungen": "Erfahrung im Schreiben von Sitzungsprotokollen und Interesse an kreativen Schreibtechniken.",
+  "Daten": "Keine Angabe",
+  "TechnischeTools": "Plattform für den Austausch von Ideen und Schreibtechniken, eventuell Integration von Schreibprogrammen",
+  "FinanzielleRessourcen": "Keine finanziellen Ressourcen notwendig",
+  "RisikoWagnis": "Mögliche Ablehnung von traditionellen Schreibweisen und Bedenken wegen der Validität der Protokolle. Möglicherweise notwendige Schulung der Lehrenden im Umgang mit kreativen Schreibtechniken.",
+  "SchwierigkeitenHindernisse": "Schwierigkeiten bei der Etablierung und Verbreitung der neuen Schreibpraktiken, möglicher Widerstand gegen eine Veränderung der Sitzungsprotokolle",
+  "Ursprung": {
+    "TopDown": false,
+    "BottomUp": true
+  },
+  "DauerIntervall": "Keine Angabe",
+  "Vorbereitungszeit": {
+    "Umsetzung": "1-2 Monate",
+    "Initiierung": "2 Wochen"
+  },
+  "Nachhaltigkeit": "Die Plattform soll dauerhaft zur Verfügung stehen und kontinuierlich verbessert werden. Eine gemeinsame Nutzung und Verbreitung der kreativen Schreibtechniken und der Ergebnisse ist erwünscht.",
+  "Ergebnistyp": "Eine Verbesserung der Motivation zur Teilnahme an Sitzungen und eine Verbesserung der Zusammenarbeit innerhalb des Lehrteams. Es sollen kreative und interessante Sitzungsprotokolle erarbeitet werden." 
+}
+,
+{
+  "Titel": "Die goldene Mensakarte - Skip the Line dank Ehrenamt",
+  "Zielgruppe": "Studierende",
+  "Anwendungsfall": "Das Projekt 'Die goldene Mensakarte' soll als Anreiz für Studierende dienen, sich ehrenamtlich zu engagieren. Im Austausch für eine bestimmte Anzahl an Stunden ehrenamtlicher Tätigkeit, soll den Teilnehmenden eine goldene Mensakarte ausgehändigt werden, mit der sie in der Mensa die Warteschlange überspringen und direkt zur Essensausgabe gehen können.",
+  "Beschreibung": "Das Projekt 'Die goldene Mensakarte' soll Studierende dazu motivieren, sich ehrenamtlich zu engagieren. Im Gegenzug wird den Teilnehmenden eine goldene Mensakarte ausgehändigt, mit der sie in der Mensa die Warteschlange überspringen und direkt zur Essensausgabe gehen können. Hierdurch wird sowohl das ehrenamtliche Engagement der Studierenden gefördert als auch die Wartezeit in der Mensa verkürzt.",
+  "GeeignetePersonenzahl": {
+    "min": 1,
+    "max": "keine Begrenzung"
+  },
+  "Partizipation": {
+    "Partizipationsgrad": "hoch",
+    "ArtDerPartizipation": "Mitgestaltung"
+  },
+  "Voraussetzungen": "Erfassung der Stunden durch ein geeignetes System, das Vertrauen der Studierenden in die Zuverlässigkeit des Systems",
+  "Daten": "Erfasste Stunden der ehrenamtlichen Tätigkeit",
+  "TechnischeTools": "Online-System zur Erfassung der ehrenamtlichen Stunden",
+  "FinanzielleRessourcen": "Finanzielle Ressourcen notwendig zur Produktion und Ausgabe der goldenen Mensakarten",
+  "RisikoWagnis": "Mögliche Missachtung der Mensa-Regeln durch Inhaber der goldenen Mensakarte. Möglicher Missbrauch des Systems zur Erfassung der ehrenamtlichen Stunden.",
+  "SchwierigkeitenHindernisse": "Akzeptanz durch die Studierenden und Durchsetzung der Regeln. Mögliche technische Schwierigkeiten bei der Implementierung des Online-Systems",
+  "Ursprung": {
+    "TopDown": false,
+    "BottomUp": true
+  },
+  "DauerIntervall": "Ein Semester oder länger",
+  "Vorbereitungszeit": {
+    "Umsetzung": "1-2 Monate",
+    "Initiierung": "1 Woche"
+  },
+  "Nachhaltigkeit": "Das Projekt soll dauerhaft zur Verfügung stehen und kontinuierlich verbessert werden. Eine erfolgreiche Teilnahme und Ausstellung der goldenen Mensakarte sollte Studierende weiterhin motivieren, sich ehrenamtlich zu engagieren.",
+  "Ergebnistyp": "Eine Verbesserung der Motivation der Studierenden zur ehrenamtlichen Tätigkeit und Reduzierung der Wartezeit in der Mensa." 
+}
+,
+{
+  "Titel": "Switch & Glitch - der große Statusgruppentausch in der Senatssitzung",
+  "Zielgruppe": "Studierendenvertretung, Hochschulleitung",
+  "Anwendungsfall": "Das Projekt 'Switch & Glitch' soll die Statusgruppen der Senatssitzung temporär austauschen, um Empathie und Verständnis zwischen den verschiedenen Gruppen zu fördern und für eine bessere Zusammenarbeit zu sorgen.",
+  "Beschreibung": "Das Projekt 'Switch & Glitch' soll innerhalb einer Senatssitzung eine temporäre Tauschaktion der Statusgruppen ermöglichen. Studierendenvertretende sollen sich für eine Sitzung in die Rolle von Hochschulleitungsmitgliedern versetzen und umgekehrt. Hierdurch sollen Empathie und Verständnis zwischen den Statusgruppen gefördert werden und die Zusammenarbeit verbessert werden.",
+  "GeeignetePersonenzahl": {
+    "min": 10,
+    "max": 30
+  },
+  "Partizipation": {
+    "Partizipationsgrad": "hoch",
+    "ArtDerPartizipation": "Mitbestimmung"
+  },
+  "Voraussetzungen": "Sensibilisierung der Teilnehmerinnen und Teilnehmer für die Probleme der jeweils anderen Gruppe.",
+  "Daten": "Keine Angabe",
+  "TechnischeTools": "Keine speziellen technischen Tools notwendig",
+  "FinanzielleRessourcen": "Keine finanziellen Ressourcen notwendig",
+  "RisikoWagnis": "Mögliche Unzufriedenheit oder Uneinsicht der Teilnehmerinnen und Teilnehmer. Möglicher Widerstand von Seiten der Hochschulleitung gegen die Tauschaktion.",
+  "SchwierigkeitenHindernisse": "Durchführung der Tauschaktion während einer Senatssitzung, möglicher Widerspruch von Seiten der Nicht-Teilnehmenden",
+  "Ursprung": {
+    "TopDown": false,
+    "BottomUp": true
+  },
+  "DauerIntervall": "Einmalige Aktion während einer Senatssitzung",
+  "Vorbereitungszeit": {
+    "Umsetzung": "1 Woche",
+    "Initiierung": "1 Woche"
+  },
+  "Nachhaltigkeit": "Die Tauschaktion soll als Signal für eine verbesserte Zusammenarbeit der Statusgruppen wahrgenommen werden und mittelfristig zu einer höheren Empathie und Verständnis zwischen den Gruppen führen. Eine Fortsetzung der Aktion in regelmäßigen Abständen kann zu einer langfristigen Veränderung beitragen.",
+  "Ergebnistyp": "Eine Verbesserung der Zusammenarbeit zwischen der Studierendenvertretung und Hochschulleitung durch Empathie und Verständnis für die Probleme der jeweils anderen Gruppe." 
+}
+,
+{
+  "Titel": "Aber bitte mit Sahne! - Veganer Kuchenbasar des Prüfungsausschusses",
+  "Zielgruppe": "Studierende",
+  "Anwendungsfall": "Der Prüfungsausschuss plant einen Kuchenbasar, um Geld für eine Spende zu sammeln. Das Ziel ist es, eine barrierefreie und inklusive Veranstaltung zu schaffen, die auch für Veganer*innen geeignet ist.",
+  "Beschreibung": "Der Kuchenbasar soll ausschließlich aus veganen Kuchen und Gebäck bestehen. Um sicherzustellen, dass für jeden Geschmack etwas dabei ist, sollen Studierende dazu aufgerufen werden, eigene vegane Kuchen zu backen und auf dem Basar zum Verkauf anzubieten.",
+  "GeeignetePersonenzahl": {
+    "min": 10,
+    "max": 50
+  },
+  "Partizipation": {
+    "Partizipationsgrad": "hoch",
+    "ArtDerPartizipation": "Mitgestaltung"
+  },
+  "Voraussetzungen": "Studierende sollten in der Lage sein, einen veganen Kuchen zu backen",
+  "Daten": "Anzahl der verkauften Kuchen",
+  "TechnischeTools": "Keine technischen Tools erforderlich",
+  "FinanzielleRessourcen": "Finanzielle Ressourcen sind für den Kauf von Zutaten erforderlich",
+  "RisikoWagnis": "Es besteht das Risiko, dass nicht genügend Studierende Kuchen beisteuern, oder dass der Basar nicht genügend Besucher*innen anzieht, um das geplante Ziel zu erreichen",
+  "SchwierigkeitenHindernisse": "Es könnte schwierig sein, Studierende zu motivieren, veganen Kuchen zu backen. Außerdem könnte es schwierig sein, genügend Freiwillige zu finden, um den Kuchenbasar erfolgreich zu organisieren.",
+  "Ursprung": {
+    "TopDown": false,
+    "BottomUp": true
+  },
+  "DauerIntervall": "Ein Nachmittag",
+  "Vorbereitungszeit": {
+    "Umsetzung": "1-2 Wochen",
+    "Initiierung": "1 Woche"
+  },
+  "Nachhaltigkeit": "Über die Spende hinaus könnte der Kuchenbasar eine Gelegenheit bieten, die Gemeinschaft der Studierenden zu stärken und das Bewusstsein für vegane Ernährung zu fördern.",
+  "Ergebnistyp": "Gesammelte Gesamtspende"
+}
+,
+{
+  "Titel": "Large Student Language Models - KI-generierte studentische Stellungnahmen für das Hochschulgremium von morgen",
+  "Zielgruppe": "Studierende",
+  "Anwendungsfall": "Large Student Language Models (LSLMs) sind KI-Modelle, die auf großen Sprachkorpora trainiert sind und in der Lage sind, menschenähnlichen Text zu erzeugen. Dieses Projekt stellt eine Partizipationsmethode dar, bei der LSLMs eingesetzt werden, um studentische Stellungnahmen für das Hochschulgremium zu generieren.",
+  "Beschreibung": "Die Teilnehmenden können durch das Verfassen von Stichpunkten oder kurzen Texten Themenvorschläge und Fragestellungen für das Hochschulgremium liefern. Anschließend werden diese von LSLMs verarbeitet und in vollständige studentische Stellungnahmen umgewandelt. Die generierten Stellungnahmen können dann von den Teilnehmenden diskutiert und bewertet werden. Auf diese Weise können auch Studierende, die Schwierigkeiten beim Verfassen von Texten haben oder nicht über ausreichend Zeit verfügen, um sich intensiv mit einem Thema zu beschäftigen, an der Gestaltung des Hochschulbetriebs teilnehmen und ihre Meinungen äußern.",
+  "GeeignetePersonenzahl": {
+    "min": 5,
+    "max": 50
+  },
+  "Partizipation": {
+    "Partizipationsgrad": "mittel",
+    "ArtDerPartizipation": "Mitgestaltung"
+  },
+  "Voraussetzungen": "Die Teilnehmenden sollten grundlegende Kenntnisse im Umgang mit digitalen Plattformen haben.",
+  "Daten": "Themenvorschläge und kurze Texte der Teilnehmenden",
+  "TechnischeTools": "Large Student Language Models (LSLMs)",
+  "FinanzielleRessourcen": "Keine",
+  "RisikoWagnis": "Eine wichtige Herausforderung besteht darin, sicherzustellen, dass die generierten Stellungnahmen tatsächlich die Meinungen der Studierenden widerspiegeln und nicht von den LSLMs verfälscht wurden.",
+  "SchwierigkeitenHindernisse": "Es kann schwierig sein, den Teilnehmenden die Funktionsweise von LSLMs verständlich zu machen, da dies auf einem komplexen mathematischen Modell beruht.",
+  "Ursprung": {
+    "TopDown": false,
+    "BottomUp": true
+  },
+  "DauerIntervall": "Variabel, je nach Anzahl der Teilnehmenden und Themenkomplexität",
+  "Vorbereitungszeit": {
+    "Umsetzung": "1 Woche",
+    "Initiierung": "1 Tag"
+  },
+  "Nachhaltigkeit": "Die generierten Stellungnahmen können als Grundlage für weitere Diskussionen und Entscheidungen im Hochschulgremium dienen.",
+  "Ergebnistyp": "Generierung von studentischen Stellungnahmen für das Hochschulgremium"
+},
+
+{
+  "Titel": "Das PartiDeck - ein physisches Kartendeck mit ausgewählten Partizipationsmethoden",
+  "Zielgruppe": "Lehrende, Studierende, Studierendenvertretung, Hochschulleitung",
+  "Anwendungsfall": "Das PartiDeck bietet eine einfache Möglichkeit, aus einer Vielzahl von bewährten Partizipationsmethoden auszuwählen und diese in einem Workshop oder einer Besprechung zu nutzen. Die Teilnehmenden können durch Ziehen von Karten zufällig eine Methode auswählen oder gezielt nach bestimmten Kategorien suchen.",
+  "Beschreibung": "Das PartiDeck umfasst eine Reihe von Karten, auf denen jeweils eine Partizipationsmethode beschrieben wird. Die Methoden sind nach Kategorien wie Informationsaustausch, Mitbestimmung oder Mitgestaltung geordnet und können je nach Bedarf ausgewählt werden. Die Karten enthalten auch weiterführende Hinweise, wie z.B. die benötigte Zeit, die Anzahl der Teilnehmenden oder spezielle Voraussetzungen.",
+  "GeeignetePersonenzahl": {
+    "min": 2,
+    "max": 50
+  },
+  "Partizipation": {
+    "Partizipationsgrad": "hoch",
+    "ArtDerPartizipation": "Mitgestaltung"
+  },
+  "Voraussetzungen": "Keine besonderen Voraussetzungen",
+  "Daten": "Keine",
+  "TechnischeTools": "Keine",
+  "FinanzielleRessourcen": "Die Kosten für die Produktion des Kartendecks und den Druck können anfallen.",
+  "RisikoWagnis": "Es kann schwierig sein, eine angemessene Anzahl von Karten für alle Kategorien und Bedürfnisse zu erstellen.",
+  "SchwierigkeitenHindernisse": "Es kann Herausforderungen bei der Erstellung und Zusammenstellung der Karten geben.",
+  "Ursprung": {
+    "TopDown": false,
+    "BottomUp": true
+  },
+  "DauerIntervall": "Variabel, je nach Anzahl der Teilnehmenden und Auswahl der Methode",
+  "Vorbereitungszeit": {
+    "Umsetzung": "Keine",
+    "Initiierung": "1 Woche (für die Erstellung des Kartendecks)"
+  },
+  "Nachhaltigkeit": "Das PartiDeck kann immer wieder genutzt werden und bietet eine einfache Möglichkeit, bewährte Partizipationsmethoden zu sammeln und zu teilen.",
+  "Ergebnistyp": "Durchführung von ausgewählten Partizipationsmethoden"
+}
+]
