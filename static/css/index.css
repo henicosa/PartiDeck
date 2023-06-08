@@ -24,6 +24,9 @@ h3 {
 
 section {
 	padding: 2rem;
+}
+
+section:not(:last-child) {
 	border-bottom: 1px solid #ccc;
 }
 
