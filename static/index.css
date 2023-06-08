@@ -7,22 +7,19 @@ body {
 	color: #333;
 	background-color: #fff;
 	margin: 0;
-	padding: 20px;
+	padding: 2rem;
 }
 
 h1 {
 	color: var(--akzentfarbe);
 }
-
-table {
-	width: 100%;
-	border-collapse: collapse;
-	margin-top: 20px;
+h3 {
+	color: var(--akzentfarbe);
+	margin: 0;
 }
 
-th, td {
-	padding: 10px;
-	text-align: left;
+section {
+	padding: 2rem;
 	border-bottom: 1px solid #ccc;
 }
 
@@ -30,12 +27,13 @@ th {
 	font-weight: bold;
 }
 
-td {
+p {
 	color: var(--akzentfarbe);
+	margin: 0.5rem 0;
 }
 
-@media (max-width: 768px) {
-	th, td {
-		padding: 5px;
+@media (min-width: 768px) {
+	section {
+		padding: 1rem 0.75rem;
 	}
 }
