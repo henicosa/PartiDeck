@@ -1,0 +1,41 @@
+:root {
+	--akzentfarbe: #B57EDC; /* Lavendel */
+}
+
+body {
+	font-family: Arial, sans-serif;
+	color: #333;
+	background-color: #fff;
+	margin: 0;
+	padding: 20px;
+}
+
+h1 {
+	color: var(--akzentfarbe);
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+th, td {
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1px solid #ccc;
+}
+
+th {
+	font-weight: bold;
+}
+
+td {
+	color: var(--akzentfarbe);
+}
+
+@media (max-width: 768px) {
+	th, td {
+		padding: 5px;
+	}
+}
