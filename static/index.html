@@ -2,174 +2,109 @@
 <html>
 <head>
   <title>Anzeige des JSON</title>
-  <style>
-    :root {
-      --akzentfarbe: #B57EDC; /* Lavendel */
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      color: #333;
-      background-color: #fff;
-      margin: 0;
-      padding: 20px;
-    }
-
-    h1 {
-      color: var(--akzentfarbe);
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-
-    th, td {
-      padding: 10px;
-      text-align: left;
-      border-bottom: 1px solid #ccc;
-    }
-
-    th {
-      font-weight: bold;
-    }
-
-    td {
-      color: var(--akzentfarbe);
-    }
-
-    @media (max-width: 768px) {
-      th, td {
-        padding: 5px;
-      }
-    }
-  </style>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      fetch('methoden.json')
-        .then(response => response.json())
-        .then(jsonData => {
-
-          // ein zufälliges Listenelement auswählen
-          const randomIndex = Math.floor(Math.random() * jsonData.length);
-          jsonData = jsonData[randomIndex];
-          // JSON erfolgreich eingelesen
-          // Felder der Tabelle füllen
-          document.getElementById('titel').textContent = jsonData.Titel;
-          document.getElementById('zielgruppe').textContent = jsonData.Zielgruppe;
-          document.getElementById('anwendungsfall').textContent = jsonData.Anwendungsfall;
-          document.getElementById('beschreibung').textContent = jsonData.Beschreibung;
-          document.getElementById('minPersonenzahl').textContent = jsonData.GeeignetePersonenzahl.min;
-          document.getElementById('maxPersonenzahl').textContent = jsonData.GeeignetePersonenzahl.max;
-          document.getElementById('partizipationsgrad').textContent = jsonData.Partizipation.Partizipationsgrad;
-          document.getElementById('artDerPartizipation').textContent = jsonData.Partizipation.ArtDerPartizipation;
-          document.getElementById('voraussetzungen').textContent = jsonData.Voraussetzungen;
-          document.getElementById('daten').textContent = jsonData.Daten;
-          document.getElementById('technischeTools').textContent = jsonData.TechnischeTools;
-          document.getElementById('finanzielleRessourcen').textContent = jsonData.FinanzielleRessourcen;
-          document.getElementById('risikoWagnis').textContent = jsonData.RisikoWagnis;
-          document.getElementById('schwierigkeitenHindernisse').textContent = jsonData.SchwierigkeitenHindernisse;
-          document.getElementById('ursprungTopDown').textContent = jsonData.Ursprung.TopDown;
-          document.getElementById('ursprungBottomUp').textContent = jsonData.Ursprung.BottomUp;
-          document.getElementById('dauerIntervall').textContent = jsonData.DauerIntervall;
-          document.getElementById('vorbereitungszeitUmsetzung').textContent = jsonData.Vorbereitungszeit.Umsetzung;
-          document.getElementById('vorbereitungszeitInitiierung').textContent = jsonData.Vorbereitungszeit.Initiierung;
-          document.getElementById('nachhaltigkeit').textContent = jsonData.Nachhaltigkeit;
-          document.getElementById('ergebnistyp').textContent = jsonData.Ergebnistyp;
-        })
-        .catch(error => {
-          console.error('Fehler beim Lesen der JSON-Datei:', error);
-        });
-    });
-  </script>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/card.css">
+  <script src="index.js"></script>
 </head>
 <body>
-  <h1>Partizipationsmethode</h1>
-  <table>
-    <tr>
-      <td>Titel:</td>
-      <td id="titel"></td>
-    </tr>
-    <tr>
-      <td>Zielgruppe:</td>
-      <td id="zielgruppe"></td>
-    </tr>
-    <tr>
-      <td>Anwendungsfall:</td>
-      <td id="anwendungsfall"></td>
-    </tr>
-    <tr>
-      <td>Beschreibung:</td>
-      <td id="beschreibung"></td>
-    </tr>
-    <tr>
-      <td>Geeignete Personenzahl (min-max):</td>
-      <td id="minPersonenzahl"></td>
-      <td>-</td>
-      <td id="maxPersonenzahl"></td>
-    </tr>
-    <tr>
-      <td>Partizipationsgrad:</td>
-      <td id="partizipationsgrad"></td>
-    </tr>
-    <tr>
-      <td>Art der Partizipation:</td>
-      <td id="artDerPartizipation"></td>
-    </tr>
-    <tr>
-      <td>Voraussetzungen:</td>
-      <td id="voraussetzungen"></td>
-    </tr>
-    <tr>
-      <td>Daten:</td>
-      <td id="daten"></td>
-    </tr>
-    <tr>
-      <td>Technische Tools:</td>
-      <td id="technischeTools"></td>
-    </tr>
-    <tr>
-      <td>Finanzielle Ressourcen:</td>
-      <td id="finanzielleRessourcen"></td>
-    </tr>
-    <tr>
-      <td>Risiko/Wagnis:</td>
-      <td id="risikoWagnis"></td>
-    </tr>
-    <tr>
-      <td>Schwierigkeiten/Hindernisse:</td>
-      <td id="schwierigkeitenHindernisse"></td>
-    </tr>
-    <tr>
-      <td>Ursprung Top-Down:</td>
-      <td id="ursprungTopDown"></td>
-    </tr>
-    <tr>
-      <td>Ursprung Bottom-Up:</td>
-      <td id="ursprungBottomUp"></td>
-    </tr>
-    <tr>
-      <td>Dauer Intervall:</td>
-      <td id="dauerIntervall"></td>
-    </tr>
-    <tr>
-      <td>Vorbereitungszeit Umsetzung:</td>
-      <td id="vorbereitungszeitUmsetzung"></td>
-    </tr>
-    <tr>
-      <td>Vorbereitungszeit Initiierung:</td>
-      <td id="vorbereitungszeitInitiierung"></td>
-    </tr>
-    <tr>
-      <td>Nachhaltigkeit:</td>
-      <td id="nachhaltigkeit"></td>
-    </tr>
-    <tr>
-      <td>Ergebnistyp:</td>
-      <td id="ergebnistyp"></td>
-    </tr>
-  </table>
+<div class="card-container">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="card-front">
+        <div class="spacing1">
+          <section>
+            <img class="card-icon" src="imgs/shapes.png">
+            <h3>Partizipationsmethode</h3>
+            <h1 id="titel"></h1>
+          </section>
+        </div>
+      </div>
+      <div class="card-back">
+        <div class="card-scroll">
+          <div class="spacing1">
+            <section>
+              <h3>Zielgruppe</h3>
+              <p id="zielgruppe"></p>
+            </section>
+            <section>
+              <h3>Anwendungsfall</h3>
+              <p id="anwendungsfall"></p>
+              </section>
+            <section>
+              <h3>Beschreibung</h3>
+              <p id="beschreibung"></p>
+            </section>
+            <section>
+              <h3>Geeignete Personenzahl</h3>
+              <p id="personenzahl"></p>
+            </section>
+            <section>
+              <h3>Partizipationsgrad</h3>
+              <p id="partizipationsgrad"></p>
+            </section>
+            <section>
+              <h3>Art der Partizipation</h3>
+              <p id="artDerPartizipation"></p>
+            </section>
+            <section>
+              <h3>Voraussetzungen</h3>
+              <p id="voraussetzungen"></p>
+            </section>
+            <section>
+              <h3>Daten</h3>
+              <p id="daten"></p>
+            </section>
+            <section>
+              <h3>Technische Tools</h3>
+              <p id="technischeTools"></p>
+            </section>
+            <section>
+              <h3>Finanzielle Ressourcen</h3>
+              <p id="finanzielleRessourcen"></p>
+            </section>
+            <section>
+              <h3>Risiko/Wagnis</h3>
+              <p id="risikoWagnis"></p>
+            </section>
+            <section>
+              <h3>Schwierigkeiten/Hindernisse</h3>
+              <p id="schwierigkeitenHindernisse"></p>
+            </section>
+            <section>
+              <h3>Ursprung Top-Down</h3>
+              <p id="ursprungTopDown"></p>
+            </section>
+            <section>
+              <h3>Ursprung Bottom-Up</h3>
+              <p id="ursprungBottomUp"></p>
+            </section>
+            <section>
+              <h3>Dauer Intervall</h3>
+              <p id="dauerIntervall"></p>
+            </section>
+            <section>
+              <h3>Vorbereitungszeit Umsetzung</h3>
+              <p id="vorbereitungszeitUmsetzung"></p>
+            </section>
+            <section>
+              <h3>Vorbereitungszeit Initiierung</h3>
+              <p id="vorbereitungszeitInitiierung"></p>
+            </section>
+            <section>
+              <h3>Nachhaltigkeit</h3>
+              <p id="nachhaltigkeit"></p>
+            </section>
+            <section>
+              <h3>Ergebnistyp</h3>
+              <p id="ergebnistyp"></p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="cardFlip.js"></script>
 </body>
 </html>
 
