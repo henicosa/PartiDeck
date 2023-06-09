@@ -6,32 +6,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // ein zufälliges Listenelement auswählen
         const randomIndex = Math.floor(Math.random() * jsonData.length);
-        jsonData = jsonData[randomIndex];
         // JSON erfolgreich eingelesen
         // Felder der Tabelle füllen
-        document.getElementById('titel').textContent = jsonData.Titel;
-        document.getElementById('zielgruppe').textContent = jsonData.Zielgruppe;
-        document.getElementById('anwendungsfall').textContent = jsonData.Anwendungsfall;
-        document.getElementById('beschreibung').textContent = jsonData.Beschreibung;
-        document.getElementById('minPersonenzahl').textContent = jsonData.GeeignetePersonenzahl.min;
-        document.getElementById('maxPersonenzahl').textContent = jsonData.GeeignetePersonenzahl.max;
-        document.getElementById('partizipationsgrad').textContent = jsonData.Partizipation.Partizipationsgrad;
-        document.getElementById('artDerPartizipation').textContent = jsonData.Partizipation.ArtDerPartizipation;
-        document.getElementById('voraussetzungen').textContent = jsonData.Voraussetzungen;
-        document.getElementById('daten').textContent = jsonData.Daten;
-        document.getElementById('technischeTools').textContent = jsonData.TechnischeTools;
-        document.getElementById('finanzielleRessourcen').textContent = jsonData.FinanzielleRessourcen;
-        document.getElementById('risikoWagnis').textContent = jsonData.RisikoWagnis;
-        document.getElementById('schwierigkeitenHindernisse').textContent = jsonData.SchwierigkeitenHindernisse;
-        document.getElementById('ursprungTopDown').textContent = jsonData.Ursprung.TopDown;
-        document.getElementById('ursprungBottomUp').textContent = jsonData.Ursprung.BottomUp;
-        document.getElementById('dauerIntervall').textContent = jsonData.DauerIntervall;
-        document.getElementById('vorbereitungszeitUmsetzung').textContent = jsonData.Vorbereitungszeit.Umsetzung;
-        document.getElementById('vorbereitungszeitInitiierung').textContent = jsonData.Vorbereitungszeit.Initiierung;
-        document.getElementById('nachhaltigkeit').textContent = jsonData.Nachhaltigkeit;
-        document.getElementById('ergebnistyp').textContent = jsonData.Ergebnistyp;
+        displayCard(jsonData[randomIndex])
       })
       .catch(error => {
         console.error('Fehler beim Lesen der JSON-Datei:', error);
       });
 });
+
+function displayCard(cardJson) {
+  document.getElementById('titel').textContent = cardJson.Titel;
+  document.getElementById('zielgruppe').textContent = cardJson.Zielgruppe;
+  document.getElementById('anwendungsfall').textContent = cardJson.Anwendungsfall;
+  document.getElementById('beschreibung').textContent = cardJson.Beschreibung;
+  document.getElementById('personenzahl').textContent = `${cardJson.GeeignetePersonenzahl.min} - ${cardJson.GeeignetePersonenzahl.max}`;
+  document.getElementById('partizipationsgrad').textContent = cardJson.Partizipation.Partizipationsgrad;
+  document.getElementById('artDerPartizipation').textContent = cardJson.Partizipation.ArtDerPartizipation;
+  document.getElementById('voraussetzungen').textContent = cardJson.Voraussetzungen;
+  document.getElementById('daten').textContent = cardJson.Daten;
+  document.getElementById('technischeTools').textContent = cardJson.TechnischeTools;
+  document.getElementById('finanzielleRessourcen').textContent = cardJson.FinanzielleRessourcen;
+  document.getElementById('risikoWagnis').textContent = cardJson.RisikoWagnis;
+  document.getElementById('schwierigkeitenHindernisse').textContent = cardJson.SchwierigkeitenHindernisse;
+  document.getElementById('ursprungTopDown').textContent = cardJson.Ursprung.TopDown;
+  document.getElementById('ursprungBottomUp').textContent = cardJson.Ursprung.BottomUp;
+  document.getElementById('dauerIntervall').textContent = cardJson.DauerIntervall;
+  document.getElementById('vorbereitungszeitUmsetzung').textContent = cardJson.Vorbereitungszeit.Umsetzung;
+  document.getElementById('vorbereitungszeitInitiierung').textContent = cardJson.Vorbereitungszeit.Initiierung;
+  document.getElementById('nachhaltigkeit').textContent = cardJson.Nachhaltigkeit;
+  document.getElementById('ergebnistyp').textContent = cardJson.Ergebnistyp;
+}
