@@ -53,6 +53,9 @@
 	overflow-y: auto;
 }
 
+.card-icon {
+	width: 100%;
+}
 /* width */
 .card-content::-webkit-scrollbar {
 	width: 0.5rem;
