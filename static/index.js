@@ -1,19 +1,64 @@
 
+let mainCard;
+let offCard;
+
+let cardsJson;
+let currentCardIdx;
+
 document.addEventListener('DOMContentLoaded', function() {
+  mainCard = document.getElementById("main-card");
+  offCard = document.getElementById("off-card");
+
   fetch('methoden.json')
       .then(response => response.json())
       .then(jsonData => {
 
+        cardsJson = jsonData;
         // ein zufälliges Listenelement auswählen
-        const randomIndex = Math.floor(Math.random() * jsonData.length);
+        currentCardIdx = Math.floor(Math.random() * jsonData.length);
         // JSON erfolgreich eingelesen
         // Felder der Tabelle füllen
-        displayCard(jsonData[randomIndex])
+        fillCard(mainCard, currentCardIdx);
       })
       .catch(error => {
         console.error('Fehler beim Lesen der JSON-Datei:', error);
       });
 });
+
+const idToAttributeMap = {
+  titel: 'Titel',
+  zielgruppe: 'Zielgruppe',
+  anwendungsfall: 'Anwendungsfall',
+  beschreibung: 'Beschreibung',
+  personenzahl: 'GeeignetePersonenzahl',
+  partizipationsgrad: 'Partizipation.Partizipationsgrad',
+  artDerPartizipation: 'Partizipation.ArtDerPartizipation',
+  voraussetzungen: 'Voraussetzungen',
+  daten: 'Daten',
+  technischeTools: 'TechnischeTools',
+  finanzielleRessourcen: 'FinanzielleRessourcen',
+  risikoWagnis: 'RisikoWagnis',
+  schwierigkeitenHindernisse: 'SchwierigkeitenHindernisse',
+  ursprungTopDown: 'Ursprung.TopDown',
+  ursprungBottomUp: 'Ursprung.BottomUp',
+  dauerIntervall: 'DauerIntervall',
+  vorbereitungszeitUmsetzung: 'Vorbereitungszeit.Umsetzung',
+  vorbereitungszeitInitiierung: 'Vorbereitungszeit.Initiierung',
+  nachhaltigkeit: 'Nachhaltigkeit',
+  ergebnistyp: 'Ergebnistyp'
+};
+
+function fillCard(domCard, cardIdx) {
+  let cardJson = cardsJson[cardIdx];
+
+  for (const [id, attribute] of Object.entries(idToAttributeMap)) {
+    if (id === 'personenzahl') {
+      domCard.querySelector(`.${id}`).textContent = `${cardJson[attribute].min} - ${cardJson[attribute].max}`;
+    } else {
+      domCard.querySelector(`.${id}`).textContent = cardJson[attribute];
+    }
+  }
+}
 
 function displayCard(cardJson) {
   document.getElementById('titel').textContent = cardJson.Titel;
