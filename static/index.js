@@ -1,6 +1,8 @@
 
 let mainCard;
 let offCard;
+let mainCardInner;
+let offCardInner;
 
 let cardsJson;
 let currentCardIdx;
@@ -11,6 +13,8 @@ let currentCardIdx;
 document.addEventListener('DOMContentLoaded', function() {
   mainCard = document.getElementById("main-card");
   offCard = document.getElementById("off-card");
+  mainCardInner = mainCard.querySelector(".flip-card-inner");
+  offCardInner = offCard.querySelector(".flip-card-inner");
 
   fetch('methoden.json')
       .then(response => response.json())

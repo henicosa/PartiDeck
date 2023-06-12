@@ -43,6 +43,11 @@ button {
 	z-index: 1;
 }
 
+/* Make off card switch to main card fipping without animation*/
+#off-card .flip-card-inner {
+	transition-property: none;
+}
+
 #off-card {
 	opacity: 0;
 }

@@ -6,7 +6,7 @@ prevBtn.addEventListener("click", () => {
   if (currentCardIdx <= 0) {
     return;
   }
-  swipCard(currentCardIdx - 1)
+  slideCards(currentCardIdx - 1)
   nextBtn.disabled = false;
   prevBtn.disabled = currentCardIdx === 0;
 });
@@ -16,7 +16,7 @@ nextBtn.addEventListener("click", () => {
   if (currentCardIdx >= cardsJson.length - 1) {
     return;
   }
-  swipCard(currentCardIdx + 1)
+  slideCards(currentCardIdx + 1)
   prevBtn.disabled = false;
   nextBtn.disabled = currentCardIdx === cardsJson.length - 1;
 });
@@ -25,18 +25,24 @@ nextBtn.addEventListener("click", () => {
  * activate a card swipe animation to another card
  * @param newCardIdx index of the new card
  */
-function swipCard(newCardIdx) {
-  const direction = newCardIdx > currentCardIdx ? "is-slided-left" : "is-slided-right";
+function slideCards(newCardIdx) {
+  const slideDirection = newCardIdx > currentCardIdx ? "is-slided-left" : "is-slided-right";
+
   fillCard(offCard, currentCardIdx);
-  fillCard(mainCard, newCardIdx);
   currentCardIdx = newCardIdx;
 
   mainCard.classList.remove("is-slided-left", "is-slided-right");
   offCard.classList.remove("is-slided-left", "is-slided-right");
 
+  if (mainCardInner.classList.contains("is-flipped") !== offCardInner.classList.contains("is-flipped")) {
+    offCardInner.classList.toggle("is-flipped");
+  }
+  mainCardInner.classList.remove("is-flipped");
+
   setTimeout(() => {
-    mainCard.classList.add(direction);
-    offCard.classList.add(direction);
+    mainCard.classList.add(slideDirection);
+    offCard.classList.add(slideDirection);
+    fillCard(mainCard, newCardIdx);
   }, 5);
 }
 
