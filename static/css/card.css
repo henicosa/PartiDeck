@@ -82,3 +82,14 @@
 .spacing1 {
 	padding: 1em;
 }
+
+.card-footer {
+	width: 100%;
+	position: absolute;
+	display:flex;
+	justify-content: center;
+	bottom: 0;
+}
+.page-idx {
+
+}

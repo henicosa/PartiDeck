@@ -65,4 +65,5 @@ function fillCard(domCard, cardIdx) {
       domCard.querySelector(`.${id}`).textContent = cardJson[attribute];
     }
   }
+  domCard.querySelector(".card-num").textContent = `${cardIdx + 1}/${cardsJson.length}`;
 }
