@@ -5,6 +5,9 @@ let offCard;
 let cardsJson;
 let currentCardIdx;
 
+/**
+ * loads json data for all cards and picks a random one to display
+ */
 document.addEventListener('DOMContentLoaded', function() {
   mainCard = document.getElementById("main-card");
   offCard = document.getElementById("off-card");
@@ -12,12 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
   fetch('methoden.json')
       .then(response => response.json())
       .then(jsonData => {
-
         cardsJson = jsonData;
-        // ein zufälliges Listenelement auswählen
         currentCardIdx = Math.floor(Math.random() * jsonData.length);
-        // JSON erfolgreich eingelesen
-        // Felder der Tabelle füllen
         fillCard(mainCard, currentCardIdx);
       })
       .catch(error => {
@@ -25,6 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
       });
 });
 
+/**
+ * object with all json identifiers mapped to their equivalent identifier in the dom tree
+ */
 const idToAttributeMap = {
   titel: 'Titel',
   zielgruppe: 'Zielgruppe',
@@ -48,6 +50,11 @@ const idToAttributeMap = {
   ergebnistyp: 'Ergebnistyp'
 };
 
+/**
+ * fills a card with all information from the json table
+ * @param domCard dom element of the card to fill
+ * @param cardIdx index of the card in the json data
+ */
 function fillCard(domCard, cardIdx) {
   let cardJson = cardsJson[cardIdx];
 
@@ -58,27 +65,4 @@ function fillCard(domCard, cardIdx) {
       domCard.querySelector(`.${id}`).textContent = cardJson[attribute];
     }
   }
-}
-
-function displayCard(cardJson) {
-  document.getElementById('titel').textContent = cardJson.Titel;
-  document.getElementById('zielgruppe').textContent = cardJson.Zielgruppe;
-  document.getElementById('anwendungsfall').textContent = cardJson.Anwendungsfall;
-  document.getElementById('beschreibung').textContent = cardJson.Beschreibung;
-  document.getElementById('personenzahl').textContent = `${cardJson.GeeignetePersonenzahl.min} - ${cardJson.GeeignetePersonenzahl.max}`;
-  document.getElementById('partizipationsgrad').textContent = cardJson.Partizipation.Partizipationsgrad;
-  document.getElementById('artDerPartizipation').textContent = cardJson.Partizipation.ArtDerPartizipation;
-  document.getElementById('voraussetzungen').textContent = cardJson.Voraussetzungen;
-  document.getElementById('daten').textContent = cardJson.Daten;
-  document.getElementById('technischeTools').textContent = cardJson.TechnischeTools;
-  document.getElementById('finanzielleRessourcen').textContent = cardJson.FinanzielleRessourcen;
-  document.getElementById('risikoWagnis').textContent = cardJson.RisikoWagnis;
-  document.getElementById('schwierigkeitenHindernisse').textContent = cardJson.SchwierigkeitenHindernisse;
-  document.getElementById('ursprungTopDown').textContent = cardJson.Ursprung.TopDown;
-  document.getElementById('ursprungBottomUp').textContent = cardJson.Ursprung.BottomUp;
-  document.getElementById('dauerIntervall').textContent = cardJson.DauerIntervall;
-  document.getElementById('vorbereitungszeitUmsetzung').textContent = cardJson.Vorbereitungszeit.Umsetzung;
-  document.getElementById('vorbereitungszeitInitiierung').textContent = cardJson.Vorbereitungszeit.Initiierung;
-  document.getElementById('nachhaltigkeit').textContent = cardJson.Nachhaltigkeit;
-  document.getElementById('ergebnistyp').textContent = cardJson.Ergebnistyp;
 }
