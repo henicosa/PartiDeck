@@ -1,24 +1,10 @@
 
-const prevBtn = document.getElementById("prev");
-const nextBtn = document.getElementById("next");
-
 prevBtn.addEventListener("click", () => {
-  if (currentCardIdx <= 0) {
-    return;
-  }
   slideCards(currentCardIdx - 1)
-  nextBtn.disabled = false;
-  prevBtn.disabled = currentCardIdx === 0;
 });
 
-
 nextBtn.addEventListener("click", () => {
-  if (currentCardIdx >= cardsJson.length - 1) {
-    return;
-  }
   slideCards(currentCardIdx + 1)
-  prevBtn.disabled = false;
-  nextBtn.disabled = currentCardIdx === cardsJson.length - 1;
 });
 
 /**
@@ -26,10 +12,14 @@ nextBtn.addEventListener("click", () => {
  * @param newCardIdx index of the new card
  */
 function slideCards(newCardIdx) {
+  if (newCardIdx < 0 || newCardIdx > cardsJson.length - 1) {
+    return;
+  }
   const slideDirection = newCardIdx > currentCardIdx ? "is-slided-left" : "is-slided-right";
 
   fillCard(offCard, currentCardIdx);
   currentCardIdx = newCardIdx;
+  updateButtonState();
 
   mainCard.classList.remove("is-slided-left", "is-slided-right");
   offCard.classList.remove("is-slided-left", "is-slided-right");
@@ -44,6 +34,11 @@ function slideCards(newCardIdx) {
     offCard.classList.add(slideDirection);
     fillCard(mainCard, newCardIdx);
   }, 5);
+}
+
+function updateButtonState() {
+  prevBtn.disabled = currentCardIdx === 0;
+  nextBtn.disabled = currentCardIdx === cardsJson.length - 1;
 }
 
 /**

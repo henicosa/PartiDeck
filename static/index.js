@@ -1,8 +1,11 @@
 
-let mainCard;
-let offCard;
-let mainCardInner;
-let offCardInner;
+const mainCard = document.getElementById("main-card");
+const offCard = document.getElementById("off-card");
+const mainCardInner = mainCard.querySelector(".flip-card-inner");
+const offCardInner = offCard.querySelector(".flip-card-inner");
+
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
 
 let cardsJson;
 let currentCardIdx;
@@ -10,23 +13,17 @@ let currentCardIdx;
 /**
  * loads json data for all cards and picks a random one to display
  */
-document.addEventListener('DOMContentLoaded', function() {
-  mainCard = document.getElementById("main-card");
-  offCard = document.getElementById("off-card");
-  mainCardInner = mainCard.querySelector(".flip-card-inner");
-  offCardInner = offCard.querySelector(".flip-card-inner");
-
-  fetch('methoden.json')
-      .then(response => response.json())
-      .then(jsonData => {
-        cardsJson = jsonData;
-        currentCardIdx = Math.floor(Math.random() * jsonData.length);
-        fillCard(mainCard, currentCardIdx);
-      })
-      .catch(error => {
-        console.error('Fehler beim Lesen der JSON-Datei:', error);
-      });
-});
+fetch('methoden.json')
+    .then(response => response.json())
+    .then(jsonData => {
+      cardsJson = jsonData;
+      currentCardIdx = Math.floor(Math.random() * jsonData.length);
+      fillCard(mainCard, currentCardIdx);
+      updateButtonState();
+    })
+    .catch(error => {
+      console.error('Fehler beim Lesen der JSON-Datei:', error);
+    });
 
 /**
  * object with all json identifiers mapped to their equivalent identifier in the dom tree
@@ -69,5 +66,5 @@ function fillCard(domCard, cardIdx) {
       domCard.querySelector(`.${id}`).textContent = cardJson[attribute];
     }
   }
-  domCard.querySelector(".card-num").textContent = `${cardIdx + 1}/${cardsJson.length}`;
+  domCard.querySelector(".card-num").textContent = `${cardIdx + 1} / ${cardsJson.length}`;
 }

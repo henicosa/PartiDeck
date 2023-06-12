@@ -87,12 +87,10 @@
 }
 
 .card-footer {
-	width: 100%;
 	position: absolute;
-	display:flex;
-	justify-content: center;
 	bottom: 0;
+	left: 50%
 }
 .page-idx {
-
+	text-align: center;
 }
