@@ -1,32 +1,41 @@
 :root {
 	--cubic-out: cubic-bezier(0.33, 1, 0.68, 1);
 	--cubic-in: cubic-bezier(0.32, 0, 0.67, 0);
-	--slide-time: .4s;
+	--slide-time: 0.4s;
 }
 
 .slideshow {
 	display: flex;
 	flex-direction: row;
 	flex-grow: 1;
-	overflow-x: hidden;
 }
 
 button {
 	position: absolute;
 }
-#prev {
-	top: 50%;
-	left: -2em;
-}
-#next {
-	top: 50%;
-	right: -2em;
+
+.nav-btn {
+
 }
 
 .slide-button {
-	height: 2em;
+	box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+	top: 50%;
+	width: 4em;
+	height: 4em;
+	background: #B57EDC url(icons/arrow-left.svg) no-repeat center;
+	background-size: 70%;
+	border: none;
+	border-radius: 50%;
 	z-index: 1;
-	/*background-image: url('icon/little-arrow.png');*/
+}
+
+#prev {
+	left: -6em;
+}
+#next {
+	right: -6em;
+	transform: scaleX(-1);
 }
 
 #main-card {
