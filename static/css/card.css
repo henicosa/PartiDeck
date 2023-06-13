@@ -2,19 +2,26 @@
 	flex-grow: 1;
 	display: flex;
 	justify-content: center;
-	align-items: stretch;
-	position: relative;
 	padding: 2em 1em;
-	overflow-y: hidden;
+	overflow: hidden;
 }
 
-.flip-card {
+.flip-card-container {
 	max-width: 71vh;
 	flex: 1;
 
-	transition: transform .4s ease-out;
+	transition-property: rotate;
+	transition-duration: .4s;
+	transition-timing-function: ease-out;
 	backface-visibility: hidden;
 	perspective: 1000px;
+}
+
+.flip-card {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	transform-style: preserve-3d;
 }
 
 .flip-card-inner {
@@ -29,8 +36,8 @@
 
 .card-front, .card-back {
 	position: absolute;
-
 	height: 100%;
+	width: 100%;
 
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -46,7 +53,6 @@
 
 .card-scroll {
 	height: 100%;
-
 	overflow-y: auto;
 	scrollbar-width: thin;
 	scrollbar-color: lightgrey transparent;
@@ -78,4 +84,13 @@
 
 .spacing1 {
 	padding: 1em;
+}
+
+.card-footer {
+	position: absolute;
+	bottom: 0;
+	left: 50%
+}
+.page-idx {
+	text-align: center;
 }

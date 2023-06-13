@@ -1,0 +1,93 @@
+:root {
+	--cubic-out: cubic-bezier(0.33, 1, 0.68, 1);
+	--cubic-in: cubic-bezier(0.32, 0, 0.67, 0);
+	--slide-time: 0.4s;
+}
+
+.slideshow {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+}
+
+button {
+	position: absolute;
+}
+
+.nav-btn {
+
+}
+
+.slide-button {
+	box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+	top: 50%;
+	width: 4em;
+	height: 4em;
+	background: #B57EDC url(icons/arrow-left.svg) no-repeat center;
+	background-size: 70%;
+	border: none;
+	border-radius: 50%;
+	z-index: 10;
+	transition: .1s ease-out;
+}
+
+.slide-button:disabled {
+	background-color: #F0F0F0;
+}
+
+#prev {
+	left: -6em;
+}
+#next {
+	right: -6em;
+	transform: scaleX(-1);
+}
+
+#main-card {
+	/*doesnt work? i switched dom order*/
+	z-index: 1;
+}
+
+/* Make off card switch to main card fipping without animation*/
+#off-card .flip-card-inner {
+	transition-property: none;
+}
+
+#off-card {
+	opacity: 0;
+}
+
+@keyframes slide-left {
+	0% {
+		transform: translateX(110%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slide-right {
+	0% {
+		transform: translateX(-110%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+#main-card.is-slided-left {
+	animation: slide-left var(--slide-time) var(--cubic-out);
+}
+#main-card.is-slided-right {
+	animation: slide-right var(--slide-time) var(--cubic-out);
+}
+#off-card.is-slided-left {
+	animation: slide-right var(--slide-time) var(--cubic-in) reverse;
+}
+#off-card.is-slided-right {
+	animation: slide-left var(--slide-time) var(--cubic-in) reverse;
+}
