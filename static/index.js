@@ -7,6 +7,9 @@ const offCardInner = offCard.querySelector(".flip-card-inner");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
 
+const queryString = window.location.search;
+const params = new URLSearchParams(queryString);
+
 let cardsJson;
 let currentCardIdx;
 
@@ -17,13 +20,29 @@ fetch('methoden.json')
     .then(response => response.json())
     .then(jsonData => {
       cardsJson = jsonData;
-      currentCardIdx = Math.floor(Math.random() * jsonData.length);
+
+      currentCardIdx = getQueriedItem();
       fillCard(mainCard, currentCardIdx);
       updateButtonState();
     })
     .catch(error => {
       console.error('Fehler beim Lesen der JSON-Datei:', error);
     });
+
+/**
+ * Reads card index from query string if one was defined with ?item=...
+ */
+function getQueriedItem() {
+  if (params.has("item")) {
+    console.log(params.get("item"));
+    const itemIdx = parseInt(params.get("item"));
+
+    if (!isNaN(itemIdx) && Number.isInteger(itemIdx)) {
+      return Math.min(Math.max(itemIdx, 1), cardsJson.length) - 1;
+    }
+  }
+  return Math.floor(Math.random() * cardsJson.length);
+}
 
 /**
  * object with all json identifiers mapped to their equivalent identifier in the dom tree
