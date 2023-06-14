@@ -10,24 +10,17 @@
 	flex-grow: 1;
 }
 
-button {
-	position: absolute;
-}
-
-.nav-btn {
-
-}
-
 .slide-button {
-	box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+	position: absolute;
 	top: 50%;
 	width: 4em;
 	height: 4em;
-	background: #B57EDC url(icons/arrow-left.svg) no-repeat center;
+	background: var(--akzentfarbe) url(icons/arrow-left.svg) no-repeat center;
 	background-size: 70%;
 	border: none;
 	border-radius: 50%;
 	z-index: 10;
+	box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
 	transition: .1s ease-out;
 }
 
