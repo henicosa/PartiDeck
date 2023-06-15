@@ -7,9 +7,6 @@ const offCardInner = offCard.querySelector(".flip-card-inner");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
 
-const queryString = window.location.search;
-const params = new URLSearchParams(queryString);
-
 let cardsJson;
 let currentCardIdx;
 
@@ -33,6 +30,9 @@ fetch('methoden.json')
  * Reads card index from query string if one was defined with ?item=...
  */
 function getQueriedItem() {
+  const queryString = window.location.search;
+  const params = new URLSearchParams(queryString);
+
   if (params.has("item")) {
     console.log(params.get("item"));
     const itemIdx = parseInt(params.get("item"));
@@ -42,6 +42,24 @@ function getQueriedItem() {
     }
   }
   return Math.floor(Math.random() * cardsJson.length);
+}
+
+/**
+ * Updates the browser url to show the correct query string for the current card
+ */
+function setQueryItem(idx) {
+  const currentUrl = window.location.href;
+  const hasQueryString = currentUrl.indexOf('?') !== -1;
+  const newItemIdx = `item=${idx + 1}`;
+  let updatedUrl;
+
+  if (hasQueryString) {
+    updatedUrl = currentUrl.replace(/([?&])item=([^&]*)/, '$1' + newItemIdx);
+  } else {
+    updatedUrl = currentUrl + '?' + newItemIdx;
+  }
+  console.log(newItemIdx, updatedUrl);
+  window.history.replaceState({}, '', updatedUrl);
 }
 
 /**
