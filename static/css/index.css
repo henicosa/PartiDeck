@@ -1,6 +1,7 @@
 :root {
 	--akzentfarbe: #B57EDC; /* Lavendel */
 	--akzentfarbe-light: #D5B7EB;
+	--highlight: #F0F0F0;
 }
 
 body {

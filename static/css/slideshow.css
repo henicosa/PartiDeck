@@ -25,7 +25,7 @@
 }
 
 .slide-button:disabled {
-	background-color: #F0F0F0;
+	background-color: var(--highlight);
 }
 
 #prev {

@@ -4,6 +4,7 @@ const offCard = document.getElementById("off-card");
 const mainCardInner = mainCard.querySelector(".flip-card-inner");
 const offCardInner = offCard.querySelector(".flip-card-inner");
 
+const overviewBtn = document.getElementById("deck-overview");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
 
@@ -34,7 +35,6 @@ function getQueriedItem() {
   const params = new URLSearchParams(queryString);
 
   if (params.has("item")) {
-    console.log(params.get("item"));
     const itemIdx = parseInt(params.get("item"));
 
     if (!isNaN(itemIdx) && Number.isInteger(itemIdx)) {
@@ -58,7 +58,6 @@ function setQueryItem(idx) {
   } else {
     updatedUrl = currentUrl + '?' + newItemIdx;
   }
-  console.log(newItemIdx, updatedUrl);
   window.history.replaceState({}, '', updatedUrl);
 }
 
@@ -105,3 +104,13 @@ function fillCard(domCard, cardIdx) {
   }
   domCard.querySelector(".card-num").textContent = `${cardIdx + 1} / ${cardsJson.length}`;
 }
+
+/**
+ * Esc shortcut for deck overview btn
+ */ 
+document.addEventListener("keyup", function(event) {
+  if (event.key === "Escape") {
+    overviewBtn.click();
+    event.preventDefault();
+  }
+});

@@ -8,14 +8,10 @@
 	box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
 }
 
-
 .nav-item {
 	height: 3rem;
 	display: block;
-	/*width: 3rem;*/
-	/*height: 3rem;*/
 	float: left;
-	/*background-size: 70%;*/
 }
 
 .nav-item a {
@@ -27,14 +23,13 @@
 	text-decoration: none;
 }
 
-
 .nav-item:hover:not(:active) {
 	border: white 1px;
 	background-color: var(--akzentfarbe-light);
 }
 
-#overview {
-	background: url(icons/stack.svg) no-repeat center;
+#deck-overview {
+	background: url(/static/css/icons/deck.svg) no-repeat center;
 	background-size: 70%;
 	padding: 0 1.6rem;
 }
