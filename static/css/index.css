@@ -16,6 +16,12 @@ body {
 	flex-direction: column;
 }
 
+#content {
+	margin-top: 3rem;
+	display: flex;
+	flex-grow: 1;
+}
+
 h1 {
 	color: var(--akzentfarbe);
 	font-size: 2em;
