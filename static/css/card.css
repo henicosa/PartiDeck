@@ -2,7 +2,7 @@
 	flex-grow: 1;
 	display: flex;
 	justify-content: center;
-	padding: 2em 1em;
+	padding: 2rem 1rem;
 	overflow: hidden;
 }
 
@@ -41,8 +41,8 @@
 
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-	border-radius: 3.044vh;
-	box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+	border-radius: 2rem;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 	/*firefox bug with backface visibility*/
 	transform: 	rotateX(0);
 }
@@ -63,7 +63,7 @@
 }
 
 .card-scroll::-webkit-scrollbar {
-	width: 0.5em;
+	width: 0.5rem;
 }
 
 /* Track */
@@ -83,7 +83,7 @@
 }
 
 .spacing1 {
-	padding: 1em;
+	padding: 1rem;
 }
 
 .card-footer {

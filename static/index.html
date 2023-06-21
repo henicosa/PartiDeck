@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
+  <meta charset="UTF-8">
   <title>Anzeige des JSON</title>
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/card.css">
   <link rel="stylesheet" href="css/slideshow.css">
+  <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
+<a href="deck.html" id="deck-overview" class="main-btn"></a>
 <div class="slideshow">
   <div class="card-container">
     <div class="flip-card-container">
-      <button class="slide-button" id="prev"></button>
+      <button class="slide-button main-btn" id="prev"></button>
       <div class="flip-card" id="off-card">
         <div class="flip-card-inner">
           <div class="card-front">
@@ -208,7 +211,7 @@
           </div>
         </div>
       </div>
-      <button class="slide-button" id="next"></button>
+      <button class="slide-button main-btn" id="next"></button>
     </div>
   </div>
 </div>

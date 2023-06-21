@@ -18,6 +18,8 @@ function slideCards(newCardIdx) {
   const slideDirection = newCardIdx > currentCardIdx ? "is-slided-left" : "is-slided-right";
 
   fillCard(offCard, currentCardIdx);
+  setQueryItem(newCardIdx);
+
   currentCardIdx = newCardIdx;
   updateButtonState();
 
