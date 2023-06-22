@@ -74,3 +74,9 @@
 #off-card.is-slided-right {
 	animation: slide-left var(--slide-time) var(--cubic-in) reverse;
 }
+
+
+.card-num{
+	font-size: 18px;
+	margin-left: -25px;
+}
