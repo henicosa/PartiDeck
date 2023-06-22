@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+:root {
+	--akzentfarbe: black; /* Lavendel */
+	--akzentfarbe-light: #fc7b54;
+	--akzentfarbe-dark: #902bf5;
+	--highlight: #F0F0F0;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
 .card-container {
 	flex-grow: 1;
 	display: flex;
@@ -93,4 +104,13 @@
 }
 .page-idx {
 	text-align: center;
+}
+
+.card-back h3{
+	color: var(--akzentfarbe-dark);
+}
+
+.card-back p{
+	color: black;
+	
 }

@@ -1,4 +1,9 @@
-
+:root {
+	--akzentfarbe: black; /* Lavendel */
+	--akzentfarbe-light: #fc7b54;
+	--akzentfarbe-dark: #902bf5;
+	--highlight: #F0F0F0;
+}
 #deck-container {
 	width: 100%;
 	height: 100%;

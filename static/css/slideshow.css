@@ -14,7 +14,7 @@
 	position: absolute;
 	top: 50%;
 
-	background: var(--akzentfarbe) url(icons/arrow-left.svg) no-repeat center;
+	background: var(--akzentfarbe-dark) url(icons/arrow-left.svg) no-repeat center;
 	background-size: 70%;
 }
 
@@ -73,4 +73,10 @@
 }
 #off-card.is-slided-right {
 	animation: slide-left var(--slide-time) var(--cubic-in) reverse;
+}
+
+
+.card-num{
+	font-size: 18px;
+	margin-left: -25px;
 }
