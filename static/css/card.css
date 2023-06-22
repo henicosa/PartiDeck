@@ -1,3 +1,9 @@
+:root {
+	--akzentfarbe: black; /* Lavendel */
+	--akzentfarbe-light: #fc7b54;
+	--akzentfarbe-dark: #902bf5;
+	--highlight: #F0F0F0;
+}
 .card-container {
 	flex-grow: 1;
 	display: flex;
@@ -93,4 +99,13 @@
 }
 .page-idx {
 	text-align: center;
+}
+
+.card-back h3{
+	color: var(--akzentfarbe-dark);
+}
+
+.card-back p{
+	color: black;
+	
 }

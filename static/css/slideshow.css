@@ -14,7 +14,7 @@
 	position: absolute;
 	top: 50%;
 
-	background: var(--akzentfarbe) url(icons/arrow-left.svg) no-repeat center;
+	background: var(--akzentfarbe-dark) url(icons/arrow-left.svg) no-repeat center;
 	background-size: 70%;
 }
 
