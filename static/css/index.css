@@ -78,6 +78,6 @@ p {
 	top: 1rem;
 	left: 1rem;
 
-	background: #B57EDC url(/static/css/icons/deck.svg) no-repeat center;
+	background: #B57EDC url(./icons/deck.svg) no-repeat center;
 	background-size: 70%;
 }
