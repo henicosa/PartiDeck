@@ -8,7 +8,12 @@
 	font-size: 2vw; /* Adjust the value as needed */
 }
 
-
+@media (min-aspect-ratio: 1/1) {
+	:root {
+	  /* Set initial font size for the h1 tag */
+		font-size: 2vh; /* Adjust the value as needed */
+	}
+  }
 
 body {
 	font-family: Arial, sans-serif;
