@@ -21,6 +21,19 @@ h1 {
 	color: var(--akzentfarbe-light);
 	font-size: 1.8em;
 }
+
+h1.titel {
+	/* Set initial font size for the h1 tag */
+	font-size: calc(2vw + 2px); /* Adjust the value as needed */
+}
+
+@media screen and (max-width: 768px) {
+	/* Adjust the maximum width as needed */
+	h1.titel {
+		/* Set a smaller font size for smaller screens */
+		font-size: calc(3.5vw + 2px); /* Adjust the value as needed */
+	}
+}
 h3 {
 	color: var(--akzentfarbe);
 	margin: 0;
