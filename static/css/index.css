@@ -3,7 +3,17 @@
 	--akzentfarbe-light: #fc7b54;
 	--akzentfarbe-dark: #902bf5;
 	--highlight: #F0F0F0;
+
+	/* Set initial font size for the h1 tag */
+	font-size: 2vw; /* Adjust the value as needed */
 }
+
+@media (min-aspect-ratio: 1/1) {
+	:root {
+	  /* Set initial font size for the h1 tag */
+		font-size: 2vh; /* Adjust the value as needed */
+	}
+  }
 
 body {
 	font-family: Arial, sans-serif;
@@ -15,15 +25,31 @@ body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+
+
 }
+
+
 
 h1 {
 	color: var(--akzentfarbe-light);
-	font-size: 1.8em;
+}
+
+h1.titel {
+	font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+	/* Adjust the maximum width as needed */
+	h1.titel {
+		/* Set a smaller font size for smaller screens */
+		font-size: 1.8rem;
+	}
 }
 h3 {
 	color: var(--akzentfarbe);
 	margin: 0;
+	font-size: 1.3rem;
 }
 
 section {
